@@ -1,9 +1,9 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
-import "./IExample.sol";
+import "./IBad.sol";
 
-contract Bad is IExample {
+contract Bad is IBad {
 
     constructor() {
     }
@@ -15,7 +15,7 @@ contract Bad is IExample {
     }
 
     // overloaded
-    function test(uint a, bytes32 b, bytes32 c) external pure returns(bool) {
+    function test(uint a, bytes32 b, bytes32 c) external pure override returns(bool) {
       a; // shh compiler
       b; // shh compiler
       c; // shh compiler 

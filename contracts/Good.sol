@@ -1,9 +1,9 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
-import "./IExample.sol";
+import "./IGood.sol";
 
-contract Good is IExample {
+contract Good is IGood {
 
     constructor() {
     }

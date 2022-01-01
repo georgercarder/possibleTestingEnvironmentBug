@@ -1,8 +1,10 @@
 # Possible ethersjs/hardhat/chai bug 
 
-Contracts `Good` and `Bad` both implement `IExample`.
+Contracts `Good` and `Bad` both implement their respective interfaces.
 
-But `Bad` implements `IExample`'s `test` function and also defines its own overloaded `test` function.
+But the `IBad` interface declares and overloaded function and `Bad` implements these.
+
+And the `IGood` interface declares a function which is not overloaded.
 
 The resulting behavior in the hardhat testing environment is that the functions `Good.test` is defined while `Bad.test` is `undefined`.
 
