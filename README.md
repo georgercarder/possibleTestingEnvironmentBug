@@ -2,7 +2,7 @@
 
 Contracts `Good` and `Bad` both implement their respective interfaces.
 
-But the `IBad` interface declares and overloaded function and `Bad` implements these.
+But the `IBad` interface declares an overloaded function and `Bad` implements these.
 
 And the `IGood` interface declares a function which is not overloaded.
 
