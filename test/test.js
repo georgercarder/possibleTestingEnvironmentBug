@@ -7,12 +7,12 @@ describe("Good and Bad", function () {
     const good = await Good.deploy();
     await good.deployed();
 
-    expect(good.test !== undefined).to.equal(true);
+    expect(good.test !== undefined);
 
     const Bad = await ethers.getContractFactory("Bad");
     const bad = await Bad.deploy();
     await bad.deployed();
 
-    expect(bad.test === undefined).to.equal(true);
+    expect(bad.test === undefined);
   });
 });
